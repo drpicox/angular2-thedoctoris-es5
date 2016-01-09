@@ -1,7 +1,4 @@
-Angular Shopping Cart Demo
+NG2 - The Doctor Is - ES5
 ==========================
 
-This is a demo of an scalable Angular Application.
-
-
-TBD: better documentation how is built and basics, more info, read code, I'm still adding components
+This is a initial demo of an scalable Angular2 Application.

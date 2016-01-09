@@ -1,3 +1,5 @@
+portServed = 9255
+
 module.exports = (grunt) ->
 
 	grunt.initConfig
@@ -20,7 +22,6 @@ module.exports = (grunt) ->
 					transform: [
 						'hintify'
 						[ 'stringify', 'extensions': [ '.html' ] ]
-						#'browserify-ngannotate'
 						'envify'
 					]
 			www:
@@ -28,7 +29,6 @@ module.exports = (grunt) ->
 				options: transform: [
 					'hintify'
 					[ 'stringify', 'extensions': [ '.html' ], "minify": true, ]
-					#'browserify-ngannotate'
 					'envify'
 					'uglifyify'
 				]
@@ -49,7 +49,7 @@ module.exports = (grunt) ->
 
 		connect:
 			options:
-				hostname: '0.0.0.0', port: 9843, livereload: 19843 # CHANGE ME
+				hostname: '0.0.0.0', port: portServed, livereload: 10000+portServed
 			livereload:	options: base: [ '.tmp','src','.' ]
 
 		filerev: build: src: 'www/*.{js,css}'

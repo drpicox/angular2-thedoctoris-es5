@@ -2,11 +2,11 @@
 
 var bootstrap = require('angular2/platform/browser').bootstrap;
 
-var AppComponent = require('./app/Component');
-
+var TheDoctorIsComponent = require('./thedoctoris').TheDoctorIsComponent;
+var THEDOCTORIS_PROVIDERS = require('./thedoctoris').THEDOCTORIS_PROVIDERS;
 
 module.exports = boot;
 
 function boot() {
-	bootstrap(AppComponent);
+	bootstrap(TheDoctorIsComponent,[THEDOCTORIS_PROVIDERS]);
 }
