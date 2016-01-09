@@ -10,7 +10,7 @@ module.exports = ngCore.Class({
 			(doctor) {
 		this.doctor = doctor;
 	}],
-	come: function() {
+	call: function() {
 		return this.doctor.come().then(function() {
 		  return 'in';
 		});

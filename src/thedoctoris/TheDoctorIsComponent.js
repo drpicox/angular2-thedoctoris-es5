@@ -13,7 +13,7 @@ module.exports = ngCore.Component({
 			Booth, function (
 			booth  ) {
 		this.is = 'out';
-		booth.come().then(function (is) {
+		booth.call().then(function (is) {
 			this.is = is;
 		}.bind(this));		
 	}],
